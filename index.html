@@ -31,10 +31,10 @@
         <span></span>
       </div>
       <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Habilidades</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
       </div>
     </div>
   </nav>
@@ -55,8 +55,8 @@
         </button>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/yasmim-castro-silva/'" target="_blank" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/0302cmd'" target="_blank" />
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="openInNewTab('https://www.linkedin.com/in/yasmim-castro-silva/')" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="openInNewTab('https://github.com/0302cmd')" />
       </div>
     </div>
   </section>
@@ -184,10 +184,10 @@
           </div>
           <h2 class="experience-sub-title project-title">Previsão do Tempo</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/0302cmd/previsao-do-tempo'" target="_blank">
+            <button class="btn btn-color-2 project-btn" onclick="openInNewTab('https://github.com/0302cmd/previsao-do-tempo')">
               Código
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://previsao-do-tempo-rho.vercel.app/'" target="_blank">
+            <button class="btn btn-color-2 project-btn" onclick="openInNewTab('https://previsao-do-tempo-rho.vercel.app/')">
               Web Site
             </button>
           </div>
@@ -198,10 +198,10 @@
           </div>
           <h2 class="experience-sub-title project-title">Cardápio Hamburgueria</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/0302cmd/Cardapio-Hamburgueria'" target="_blank">
+            <button class="btn btn-color-2 project-btn" onclick="openInNewTab('https://github.com/0302cmd/Cardapio-Hamburgueria')">
               Código
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://cardapio-hamburgueria-cwqj.vercel.app/'" target="_blank">
+            <button class="btn btn-color-2 project-btn" onclick="openInNewTab('https://cardapio-hamburgueria-cwqj.vercel.app/')">
               Web Site
             </button>
           </div>
@@ -212,10 +212,10 @@
           </div>
           <h2 class="experience-sub-title project-title">Lista de Tarefas</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/0302cmd/todo_list'" target="_blank">
+            <button class="btn btn-color-2 project-btn" onclick="openInNewTab('https://github.com/0302cmd/todo_list')">
               Código
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://0302cmd.github.io/todo_list/'" target="_blank">
+            <button class="btn btn-color-2 project-btn" onclick="openInNewTab('https://0302cmd.github.io/todo_list/')">
               Web Site
             </button>
           </div>
@@ -223,35 +223,34 @@
       </div>
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Entre em</p>
-    <h1 class="title">Contato</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:yasmimcastro333@gmail.com" target="_blank">E-mail</a></p></br>
+    <section id="contact">
+      <p class="section__text__p1">Entre em</p>
+      <h1 class="title">Contato</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:yasmimcastro333@gmail.com" target="_blank">E-mail</a></p></br>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/yasmim-castro-silva/" target="_blank">LinkedIn</a></p>
+        </div>
       </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/yasmim-castro-silva/" target="_blank">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#experience">Habilidades</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>Copyright &#169; </br>2024 Yasmim.</p>
-  </footer>
-  <script src="script.js"></script>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; </br>2024 Yasmim.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
